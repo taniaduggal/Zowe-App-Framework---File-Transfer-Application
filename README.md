@@ -14,7 +14,7 @@ a better understanding of the problems you encountered during the developmemnt o
 
 ## Project Team
 - Jean-Philippe Linardon - Rocket Software - Mentor
-- Ayeshmantha Perera - *University* - Mentee
+- Ayeshmantha Perera - Sri Lanka Institute of Information Technology - Mentee
 
 ## Deliverables:
 - [ ] Project Plan
