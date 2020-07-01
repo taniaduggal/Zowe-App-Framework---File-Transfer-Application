@@ -8,16 +8,16 @@ Status Report Template: https://github.com/openmainframeproject-internship/resou
 | Document | Description | Document Name |
 |---|---|---|
 | Project Plan | Overall week by week plan of milestones | |
-| Week 1 Status Report | | | 
-| Week 2 Status Report | | |
-| Week 3 Status Report | | |
-| Week 4 Status Report | | |
-| Week 5 Status Report | | |
-| Week 6 Status Report | | |
-| Week 7 Status Report | | |
-| Week 8 Status Report | | |
-| Week 9 Status Report | | |
-| Week 10 Status Report | | |
+| Week 1 Status Report | Done | project_status_week_1 | 
+| Week 2 Status Report | Done | project_status_week_2 |
+| Week 3 Status Report | Done | project_status_week_3 |
+| Week 4 Status Report | Done | project_status_week_4 |
+| Week 5 Status Report | Done | project_status_week_5 |
+| Week 6 Status Report | Done | project_status_week_6 |
+| Week 7 Status Report | Done | project_status_week_7 |
+| Week 8 Status Report | Done | project_status_week_8 |
+| Week 9 Status Report | Done | project_status_week_9 |
+| Week 10 Status Report | Done | project_status_week_10 |
 | Week 11 Status Report | | |
 | Week 12 Status Report | | |
 | Week 13 Status Report | | |
