@@ -13,12 +13,13 @@ a better understanding of the problems you encountered during the developmemnt o
 | scr | Source code - create as many subdirectories as needed |
 
 ## Project Team
-- Jean-Philippe Linardon - Rocket Software - Mentor
+- Sean Grady - Rocket Software - Mentor
+- Leanid Astroku - Rocket Software - Backup Mentor
 - Ayeshmantha Perera - Sri Lanka Institute of Information Technology - Mentee
 
 ## Deliverables:
 - [X] **Project Plan**
-- [ ] 1st Stipend Released
+- [X] 1st Stipend Released
 - [ ] Statement of Work
 - [ ] Architecure/High Level Design
 - [ ] Detailed Design
