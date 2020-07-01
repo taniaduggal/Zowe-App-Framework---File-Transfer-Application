@@ -1,0 +1,60 @@
+
+
+<p-tabView [activeIndex]="index">
+        <p-tabPanel header="Domain" leftIcon="pi pi-calendar">
+        </p-tabPanel>
+        <p-tabPanel header="Activity" leftIcon="pi pi-inbox">
+                <div class="ui-g-12 ui-md-12">
+                      <h2>All Activity</h2> 
+                </div>
+                <div class="ui-g-12 ui-md-12">
+                        <div class="ui-md ui-g">
+                                <div class="ui-g-12 ui-md-12">
+                                        <div class="ui-md ui-g">
+                                                <div class="ui-g-12 ui-md-3">
+                                                        6 Systems
+                                                </div>
+                                                <div class="ui-g-12 ui-md-9">
+                                                        SystemName1(4 Pending Transactions)
+                                                </div>
+                                        </div>
+                                </div>
+
+                                <div class="ui-g-12 ui-md-12">
+                                        <div class="ui-md ui-g">
+                                                <div class="ui-g-12 ui-md-3">
+                                                </div>
+                                                <div class="ui-g-12 ui-md-9">
+                                                        <p-dataView [paginator]="true" [rows]="10" [value]="list" paginatorPosition="both">
+                                                                <p-header>
+                                                                        <div class="ui-md ui-g">
+                                                                                <div class="ui-g-12 ui-md-10">
+                                                                                        <div class="ui-md ui-g">
+                                                                                                <div class="ui-md-2 ui-sm-6"> <b>File Name</b> </div>
+                                                                                                
+                                                                                                <div class="ui-md-2 ui-sm-6"> <b>Type</b> </div>
+                                                                                                
+                                                                                                <div class="ui-md-2 ui-sm-6"> <b>Size (KB)</b></div>
+                                                                                                
+                                                                                                <div class="ui-md-2 ui-sm-6"> <b>Time</b>  </div>
+                                                                                                
+                                                                                                <div class="ui-md-2 ui-sm-6">   <b>Status</b>   </div>
+                                                                                                <div class="ui-md-2 ui-sm-6">   <b>Progress</b>   </div>
+                                                                                        </div>
+                                                                                </div>
+                                                                        </div>
+                                                                </p-header>
+
+                                                                <ng-template let-item pTemplate="listItem">
+                                                                        <div class="ui-g-12 ui-md-12" style="padding: 2em;border-bottom: 1px solid #d9d9d9">
+                                                                                <download-threaded-component [item]="item"></download-threaded-component>
+                                                                        </div>
+                                                                </ng-template>
+                                                        </p-dataView>    
+                                                </div>
+                                        </div>
+                                </div>
+                        </div>
+                </div>
+        </p-tabPanel>
+</p-tabView>

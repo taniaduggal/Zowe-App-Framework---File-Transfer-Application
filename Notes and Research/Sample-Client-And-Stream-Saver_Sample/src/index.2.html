@@ -1,0 +1,107 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Conduit</title>
+  <base href="/">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="//code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css">
+  <link href="//fonts.googleapis.com/css?family=Titillium+Web:700|Source+Serif+Pro:400,700|Merriweather+Sans:400,700|Source+Sans+Pro:400,300,600,700,300italic,400italic,600italic,700italic" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="//demo.productionready.io/main.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+</head>
+<body>
+    <button id="$start">Start</button>
+    <button id="$abort">Abort</button>
+    <button id="$pause">Pause</button>
+    <div style= "width: 400px;margin-left: 5px;" class="w3-light-grey">
+      <div id="myBar" class="w3-container w3-green w3-center" style="height:24px;width:0px"></div>
+    </div>
+    
+  <!-- <app-root>Loading...</app-root> -->
+  <script src="https://cdn.jsdelivr.net/npm/web-streams-polyfill@2.0.2/dist/ponyfill.min.js"></script>
+    <script src="assets/StreamSaver.js"></script>
+
+    <script>
+       var elem = document.getElementById("myBar");
+       var abortController = new AbortController();
+       var abortSignal = abortController.signal;
+       var rstream;
+       var loaded = 0;
+       var total = 0;
+
+
+        var pause = false;
+      //  const abort = () => abortController.abort();
+      $abort.onclick = () => {
+        abortController.abort();
+       } 
+
+      $pause.onclick = () => {
+        if(!pause){
+          pause = true;
+
+        }else{
+          pause = false;
+          pauseRes();
+        }
+
+       }
+
+       $start.onclick = () => {
+          const url = 'http://localhost:8081/downloadFile'
+          const fileStream = streamSaver.createWriteStream('aka.pdf')
+          fetch(url,{preventClose:true,preventCancel:true})
+              .then(resp => {
+                        for (var pair of resp.headers.entries()) {
+              console.log(pair[0]+ ': '+ pair[1]);
+            }
+               total = Number(resp.headers.get('X-zowe-filesize'));
+                return resp.body;
+              })
+              .then(res => {
+
+                  updateProgress(res)
+              })
+         
+        }
+
+        function pauseRes(){
+          if(!pause){
+            Promise.resolve(true);
+          }
+        }
+
+        async function updateProgress(res){
+          const fileStream = streamSaver.createWriteStream('aka.pdf')
+
+                var progress = new TransformStream({
+                   async transform(chunk, controller) {
+                      if(!pause){
+                          await pauseRes();
+                          loaded += chunk.length;
+                          controller.enqueue(chunk);
+
+                        elem.style.width = (loaded/total)*100 + '%'; 
+                        elem.innerHTML = (loaded/total)*100  + '%';
+                      }
+                    
+                  }
+                })
+
+                const readableStream = res;
+                rstream = readableStream;
+              // more optimized
+                if(window.WritableStream && readableStream.pipeTo){
+                    return readableStream
+                    .pipeThrough(progress,{preventClose:true,preventCancel:true})
+                    .pipeTo(fileStream,{signal:abortSignal,preventClose:true,preventCancel:true})
+                      .then(() => console.log('done writing'))
+                }
+        }
+
+      </script>
+</body>
+</html>

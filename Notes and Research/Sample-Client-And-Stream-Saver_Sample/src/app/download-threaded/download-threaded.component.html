@@ -1,0 +1,85 @@
+
+
+<div [style.border-left]="expanded ? '5px solid #1b88bc' : none" class="ui-g-12 ui-md-10">
+    <div class="ui-g">
+        <div class="ui-g-2 ui-sm-6"> {{item.fileName}} </div>
+
+        <div class="ui-g-2 ui-sm-6"> {{item.type}} </div>
+
+        <div class="ui-g-2 ui-sm-6">{{item.size}} </div>
+
+        <div class="ui-g-2 ui-sm-6">{{item.transfertime}} </div>
+
+        <div class="ui-g-2 ui-sm-6" style="margin-top: -6px;">
+                <div *ngIf="item.status=='In progress'" class="ui-g-2 ui-md-2">
+                        <i class="pi pi-chevron-circle-right" style="font-size: 24px;"></i> 
+                </div>
+                <div *ngIf="item.status=='Done'" class="ui-g-2 ui-md-2">
+                    <i class="pi pi-check-circle" style="font-size: 24px;"></i> 
+                </div>
+                <div *ngIf="item.status=='Cancel'" class="ui-g-2 ui-md-2">
+                    <i class="pi pi-times" style="font-size: 24px;"></i> 
+                </div>
+                <div *ngIf="item.status=='Errored'" class="ui-g-2 ui-md-2">
+                    <i class="pi pi-exclamation-triangle" style="font-size: 24px;"></i> 
+                </div>    
+                <div class="ui-g-10 ui-md-9">
+                    {{item.status}} 
+                </div>
+        </div>
+
+        <div class="ui-g-2 ui-sm-6"> 
+              <p-progressSpinner [style]="{width: '50px', height: '50px'}" strokeWidth="8" fill="#EEEEEE" ></p-progressSpinner> 
+        </div>
+
+    </div>
+</div>
+<div  class="ui-g-12 ui-md-1">
+    <div class="inline" data-toggle="tooltip" data-placement="top" title="Cancel the download">
+        <i class="pi pi-times p-1 pointer" aria-hidden="true"></i>
+    </div>
+    <!-- <p-splitButton label="" (onClick)="save('info')" [model]="items"  [style]="{'background': 'none'}" styleClass="ui-button-secondary"></p-splitButton> -->
+</div>
+<div class="ui-g-12 ui-md-1">
+    <div style="top: 3px;border: 0px;background: none;" *ngIf="!expanded" class="inline" (click)="expanded = !expanded" data-toggle="tooltip" data-placement="top" title='Show details'>
+        <i class="pi pi-angle-double-down p-1 pointer" aria-hidden="true"></i>
+    </div>
+    <div style="top: 3px;border: 0px;background: none;" *ngIf="expanded" class="inline" (click)="expanded = !expanded" data-toggle="tooltip" data-placement="top" title='Hide details'>
+        <i class="pi pi-angle-double-up p-1 pointer" aria-hidden="true"></i>
+    </div>
+</div>
+
+<div style="border-left: 5px solid #1b88bc;" *ngIf="expanded" class="ui-g-12 ui-md-12">
+        <div class="ui-g-12 ui-md-12">
+                <div *ngIf="item.status" class="ui-g-3 ui-md-3">
+                        <b>Name</b>
+                </div>
+                <div class="ui-g-10 ui-md-7">
+                    {{item.fileName}} 
+                </div>
+        </div>
+        <div class="ui-g-12 ui-md-12">
+                <div *ngIf="item.status" class="ui-g-3 ui-md-3">
+                        <b>End Date/Time</b>
+                </div>
+                <div class="ui-g-10 ui-md-7">
+                    {{item.transfertime}} 
+                </div>
+        </div>
+        <div class="ui-g-12 ui-md-12">
+                <div *ngIf="item.status" class="ui-g-3 ui-md-3">
+                        <b> Originating Location</b>
+                </div>
+                <div class="ui-g-10 ui-md-7">
+                        /root/server/somewhere
+                </div>
+        </div>
+        <div class="ui-g-12 ui-md-12">
+                <div *ngIf="item.status" class="ui-g-3 ui-md-3">
+                        <b>Destination Location</b>
+                </div>
+                <div class="ui-g-10 ui-md-7">
+                        /root/server/somewhere
+                </div>
+        </div>
+</div>
