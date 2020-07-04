@@ -1,0 +1,9 @@
+[submodule "src/file-transfer-app"]
+	path = src/file-transfer-app
+	url = https://github.com/zowe/file-transfer-app
+[submodule "src/zlux-file-explorer"]
+	path = src/zlux-file-explorer
+	url = https://github.com/zowe/zlux-file-explorer
+[submodule "src/zowe-common-c"]
+	path = src/zowe-common-c
+	url = https://github.com/zowe/zowe-common-c
