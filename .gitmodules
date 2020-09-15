@@ -7,3 +7,6 @@
 [submodule "src/zowe-common-c"]
 	path = src/zowe-common-c
 	url = https://github.com/zowe/zowe-common-c
+[submodule "src/zss"]
+	path = src/zss
+	url = https://github.com/zowe/zss
