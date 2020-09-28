@@ -18,13 +18,13 @@ Status Report Template: https://github.com/openmainframeproject-internship/resou
 | Week 8 Status Report | Done | project_status_week_8 |
 | Week 9 Status Report | Done | project_status_week_9 |
 | Week 10 Status Report | Done | project_status_week_10 |
-| Week 11 Status Report | | |
-| Week 12 Status Report | | |
-| Week 13 Status Report | | |
-| Week 14 Status Report | | |
-| Week 15 Status Report | | |
-| Week 16 Status Report | | |
-| Week 17 Status Report | | |
-| Week 18 Status Report | | |
-| Week 19 Status Report | | |
-| Week 20 Status Report | | |
+| Week 11 Status Report | Done | project_status_week_11 |
+| Week 12 Status Report | Done | project_status_week_12 |
+| Week 13 Status Report | Done | project_status_week_13 |
+| Week 14 Status Report | Done | project_status_week_14 |
+| Week 15 Status Report | Done | project_status_week_15 |
+| Week 16 Status Report | Done | project_status_week_16 |
+| Week 17 Status Report | Done | project_status_week_17 |
+| Week 18 Status Report | Done | project_status_week_18 |
+| Week 19 Status Report | Done | project_status_week_19 |
+| Week 20 Status Report | Done | project_status_week_20 |
