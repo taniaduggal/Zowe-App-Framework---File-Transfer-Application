@@ -23,12 +23,12 @@
 ##### PR Link :- https://github.com/zowe/file-transfer-app/pull/49
 
 #### 4. Main changes for the File-Transfer App
-    * Enhanced startup time and build time for the app.
-    * Remove conflicting carbon styles and added webpack rule to load the min.css which makes things quite simple and no need to load scss from all components.
-    * Add the support of stream-saver which helps to download larger files from the File-Transfer application which are persisted in the mainframe file-systems.
-    * Easy to handle enviornment varaible configurations.
-    * More userfriendly ui with notifications related to the actions and download actions and state changes are displayed in realtime.
-    * Add the functionality to download larger files. 
+  * Enhanced startup time and build time for the app.
+  * Remove conflicting carbon styles and added webpack rule to load the min.css which makes things quite simple and no need to load scss from all components.
+  * Add the support of stream-saver which helps to download larger files from the File-Transfer application which are persisted in the mainframe file-systems.
+  * Easy to handle enviornment varaible configurations.
+  * More userfriendly ui with notifications related to the actions and download actions and state changes are displayed in realtime.
+  * Add the functionality to download larger files. 
       - During download, user can cancel Donwload browser will automatically abort the download.
       - Queue downloads on the user scope.
       - Handle the priority of the downloads. (Low/High Priority) 
@@ -38,7 +38,7 @@
       - All the data-tables capabilities are provided search sort in the cancel/inprogress/completed lists
       - Track the download progress of an inprogress download.
       - As the default behaviour when the application is getting closed all downloads in-progress/queued will be canceled and will be able to view in then next startup in the cancel section.
-    * <b> Files in mainframe are stored in either EBCDIC, ASCII or UTF-8 encoding.  When downloading files it's easier to download UTF-8 files it will be automatically converetd. But EBCDIC and ASCII we have to define what is the source and target encoding types of the files should be in order to downloads to work.
+   * <b> Files in mainframe are stored in either EBCDIC, ASCII or UTF-8 encoding.  When downloading files it's easier to download UTF-8 files it will be automatically converetd. But EBCDIC and ASCII we have to define what is the source and target encoding types of the files should be in order to downloads to work.
 In File-Transfer application we have addressed that in the UI with an easy user-friendly way.</b>
     * Finally download contents in folder as a whole. In Fil-transfer app defined a separate UI workflow which will  inform user regarding the folder download and download content as .tar.gz file. This was done in .tar.gz compression since it requires less compute power than creating a .zip folder in mainframe. Compute power is always a critical factor to think since there are lot of ongoing tasks in the mainframe in a given time.
 ##### PR Link :- https://github.com/zowe/file-transfer-app/pull/54
