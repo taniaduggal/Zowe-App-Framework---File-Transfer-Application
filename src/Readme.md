@@ -42,3 +42,11 @@
 In File-Transfer application we have addressed that in the UI with an easy user-friendly way.</b>
    * Finally download contents in folder as a whole. In Fil-transfer app defined a separate UI workflow which will  inform user regarding the folder download and download content as .tar.gz file. This was done in .tar.gz compression since it requires less compute power than creating a .zip folder in mainframe. Compute power is always a critical factor to think since there are lot of ongoing tasks in the mainframe in a given time.
 ##### PR Link :- https://github.com/zowe/file-transfer-app/pull/54
+
+
+## File-Transfer-Application (Zowe-Desktop-Application)
+#### Project Link :- https://github.com/zowe/zlux-file-explorer
+
+#### 1. File Explorer PR on adding new theme functioanliy, style conflicting fixes Carbon component changes remove not used ui elements. 
+##### PR Link :- https://github.com/zowe/zlux-file-explorer/pull/71/commits
+
