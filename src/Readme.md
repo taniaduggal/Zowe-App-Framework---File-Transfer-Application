@@ -3,9 +3,9 @@
 ### The main goal of the project is to develop File-Transfer-App plugin on top of zlux and it engaged zss components which were required the file-transfer app to work.
 
 ## File-Transfer-Application (Zowe-Desktop-Application)
-#### Project Link ;- https://github.com/zowe/file-transfer-app
+#### Project Link :- https://github.com/zowe/file-transfer-app
 
-1. Integrate file explorer (file-tree) to file transfer application (Explore and perform various actions on the files persisted in mainframe).
+#### 1. Integrate file explorer (file-tree) to file transfer application (Explore and perform various actions on the files persisted in mainframe).
   * This will give the user to view the file-structure of the mainframe as a tree. 
   * Wll give the ability to tag the files.
   * Change the ownership(chmod) of files and folders on the fly.
@@ -14,7 +14,7 @@
   * Search files/datasets
   * Delete datasets/files
   
-https://github.com/zowe/file-transfer-app/pull/53
+##### PR Link :- https://github.com/zowe/file-transfer-app/pull/53
 
 2. Enable search history in file explorer (file-tree) for the scope of user.
 https://github.com/zowe/file-transfer-app/pull/50
