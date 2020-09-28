@@ -69,3 +69,23 @@ In File-Transfer application we have addressed that in the UI with an easy user-
  * Delete the.tar.gz file after serving to the requested client.
  * Since this is a very specific use case for File-transfer-App team decided not to invlolve Zowe-Common-C project where we maintain the common generic functionality to be used all over the platforms.
 ##### PR Link :- https://github.com/zowe/zss/pull/204
+
+## Zowe-Common-C
+#### Project Link :- https://github.com/zowe/zowe-common-c
+
+#### 1. Extend support for mime types with few well known extentions.
+##### PR Link :- https://github.com/zowe/zowe-common-c/pull/148
+
+#### 2. Handle text file names starts with ".".
+##### PR Link :- https://github.com/zowe/zowe-common-c/pull/151
+
+#### 3. Enable force encoding with provided encoding types.
+* <b> Files in mainframe are stored in either EBCDIC, ASCII or UTF-8 encoding.  When downloading files it's easier to download UTF-8 files it will be automatically converetd. But EBCDIC and ASCII we have to define what is the source and target encoding types of the files should be in order to downloads to work.
+In File-Transfer application we have addressed that in the UI with an easy user-friendly way.</b>
+##### PR Link :- https://github.com/zowe/zowe-common-c/pull/160
+
+#### 4. Download Data-Sets.
+##### PR Link :- https://github.com/zowe/zowe-common-c/pull/168
+
+
+
