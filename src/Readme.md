@@ -1,6 +1,6 @@
 # Zowe File-Transfer-Application
 
-### The main goal of the project is to develop File-Transfer-App plugin on top of zlux and it engaged zss components which were required the file-transfer app to work.
+### The main goal of the project is to develop File-Transfer-App plugin on top of Zlux and develop the file-api's & data-set-api's in ZSS which are used as the backend to stream files/datasets and metadata.
 
 ## File-Transfer-Application (Zowe-Desktop-Application)
 #### Project Link :- https://github.com/zowe/file-transfer-app
@@ -38,7 +38,7 @@
       - All the data-tables capabilities are provided search sort in the cancel/inprogress/completed lists
       - Track the download progress of an inprogress download.
       - As the default behaviour when the application is getting closed all downloads in-progress/queued will be canceled and will be able to view in then next startup in the cancel section.
-    * Files in mainframe are stored in either EBCDIC, ASCII or UTF-8 encoding.  When downloading files it's easier to download UTF-8 files it will be automatically converetd. But EBCDIC and ASCII we have to define what is the source and target encoding types of the files should be in order to downloads to work.
-In file-transfer application we have addressed that in the UI with an easy user-friendly way.
+    * <b> Files in mainframe are stored in either EBCDIC, ASCII or UTF-8 encoding.  When downloading files it's easier to download UTF-8 files it will be automatically converetd. But EBCDIC and ASCII we have to define what is the source and target encoding types of the files should be in order to downloads to work.
+In File-Transfer application we have addressed that in the UI with an easy user-friendly way.</b>
     * Finally download contents in folder as a whole. In Fil-transfer app defined a separate UI workflow which will  inform user regarding the folder download and download content as .tar.gz file. This was done in .tar.gz compression since it requires less compute power than creating a .zip folder in mainframe. Compute power is always a critical factor to think since there are lot of ongoing tasks in the mainframe in a given time.
 ##### PR Link :- https://github.com/zowe/file-transfer-app/pull/54
