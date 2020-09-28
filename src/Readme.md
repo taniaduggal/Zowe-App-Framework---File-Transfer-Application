@@ -27,7 +27,7 @@
   * Remove conflicting carbon styles and added webpack rule to load the min.css which makes things quite simple and no need to load scss from all components.
   * Add the support of stream-saver which helps to download larger files from the File-Transfer application which are persisted in the mainframe file-systems.
   * Easy to handle enviornment varaible configurations.
-  * More userfriendly ui with notifications related to the actions and download actions and state changes are displayed in realtime.
+  * More userfriendly ui with notifications related to the actions, Download actions and state changes are displayed in realtime.
   * Add the functionality to download larger files. 
       - During download, user can cancel Donwload browser will automatically abort the download.
       - Queue downloads on the user scope.
