@@ -1,9 +1,7 @@
 # Zowe App Framework - File Transfer Application
 ## *Short Project Description*
-The directory structure in this GitHub is to allow the project to have all its resources self-contained.
-Open Source software should not just be a repository of code.  There are a number of directories to help you and others that will 
-follow in your foot steps.  It'll also allow the Linux Foundation OMP Mentorship program to keep track of your project and get
-a better understanding of the problems you encountered during the developmemnt of this project.
+
+The Zowe Virtual Desktop needs to provide a way to easily transfer files and datasets from the mainframe to a user desktop and vice versa while dealing with encoding and security. The main goal of the project is to work on the file-transfer application and make it ready for the production environment.  It should provide the ability to transfer large files and datasets and also should provide mechanisms to download large files from the client browser. And should work on the back end missing endpoints which requires the file-transfer application to work
 
 | Folder | Description |
 |---|---|
