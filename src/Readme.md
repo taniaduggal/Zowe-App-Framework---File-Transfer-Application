@@ -1,8 +1,8 @@
-This project is based on File-Transfer-App plugin on top of zlux and it engaged zss components which were required the file-transfer app to work.
+# Zowe File-Transfer-Application
 
-All PR :- 
+### The main goal of the project is to develop File-Transfer-App plugin on top of zlux and it engaged zss components which were required the file-transfer app to work.
 
-File-Transfer-Application (Zowe-Desktop-Application)
+## File-Transfer-Application (Zowe-Desktop-Application)
 https://github.com/zowe/file-transfer-app
 
 1. Integrate file explorer (file-tree) to file transfer application (Explore and perform various actions on the files persisted in mainframe).
