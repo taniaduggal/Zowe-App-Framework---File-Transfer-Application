@@ -44,7 +44,7 @@ In File-Transfer application we have addressed that in the UI with an easy user-
 ##### PR Link :- https://github.com/zowe/file-transfer-app/pull/54
 
 
-## File-Transfer-Application (Zowe-Desktop-Application)
+## Zlux-File-Explorer (Zowe-File-Tree)
 #### Project Link :- https://github.com/zowe/zlux-file-explorer
 
 #### 1. File Explorer PR on 
@@ -52,5 +52,19 @@ In File-Transfer application we have addressed that in the UI with an easy user-
   * Fixing style conflicts 
   * Carbon component reroutes
   * Remove not used ui elements. 
-##### PR Link :- https://github.com/zowe/zlux-file-explorer/pull/71/commits
+##### PR Link :- https://github.com/zowe/zlux-file-explorer/pull/71
 
+## ZSS
+#### Project Link :- https://github.com/zowe/zss
+
+#### 1. ZSS changes for chmod functionality in Mainframe 
+##### PR Link :- https://github.com/zowe/zss/pull/195
+
+#### 2. ZSS changes for tag the files recursively in Mainframe.
+##### PR Link :- https://github.com/zowe/zss/pull/206
+
+#### 3. Add the funcationality to download folder content
+ * This will create .tar.gz file which will require less compute power from Mainframe.
+ * serve the tar.gz file as a file for the download purpose.
+ * delete the.tar.gz file after serving to th requested client
+##### PR Link :- https://github.com/zowe/zss/pull/204
