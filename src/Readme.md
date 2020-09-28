@@ -5,8 +5,8 @@
 ## File-Transfer-Application (Zowe-Desktop-Application)
 #### Project Link :- https://github.com/zowe/file-transfer-app
 
-#### 1. Integrate file explorer (file-tree) to file transfer application (Explore and perform various actions on the files persisted in mainframe).
-  * This will give the user to view the file-structure of the mainframe as a tree. 
+#### 1. Integrate File explorer (Zowe-File-tree) to File transfer application (Explore and perform various actions on the files persisted in Mainframe).
+  * This will give the user the ability to view the file-structure of the mainframe as a tree. 
   * Wll give the ability to tag the files.
   * Change the ownership(chmod) of files and folders on the fly.
   * Cut & Copy & Paste files feature.
@@ -16,13 +16,13 @@
   
 ##### PR Link :- https://github.com/zowe/file-transfer-app/pull/53
 
-2. Enable search history in file explorer (file-tree) for the scope of user.
-https://github.com/zowe/file-transfer-app/pull/50
+#### 2. Enable search history in file explorer (file-tree) for the scope of user.
+##### PR Link :- https://github.com/zowe/file-transfer-app/pull/50
 
-3. Add the application scan for the plugin configs to take actions.
-https://github.com/zowe/file-transfer-app/pull/49
+#### 3. Add the application scan for the plugin configs to take actions.
+##### PR Link :- https://github.com/zowe/file-transfer-app/pull/49
 
-4. Main changes for the File-Transfer App
+#### 4. Main changes for the File-Transfer App
     * Enhanced startup time and build time for the app.
     * Remove conflicting carbon styles and added webpack rule to load the min.css which makes things quite simple and no need to load scss from all components.
     * Add the support of stream-saver which helps to download larger files from the File-Transfer application which are persisted in the mainframe file-systems.
@@ -41,4 +41,4 @@ https://github.com/zowe/file-transfer-app/pull/49
     * Files in mainframe are stored in either EBCDIC, ASCII or UTF-8 encoding.  When downloading files it's easier to download UTF-8 files it will be automatically converetd. But EBCDIC and ASCII we have to define what is the source and target encoding types of the files should be in order to downloads to work.
 In file-transfer application we have addressed that in the UI with an easy user-friendly way.
     * Finally download contents in folder as a whole. In Fil-transfer app defined a separate UI workflow which will  inform user regarding the folder download and download content as .tar.gz file. This was done in .tar.gz compression since it requires less compute power than creating a .zip folder in mainframe. Compute power is always a critical factor to think since there are lot of ongoing tasks in the mainframe in a given time.
- https://github.com/zowe/file-transfer-app/pull/54
+##### PR Link :- https://github.com/zowe/file-transfer-app/pull/54
