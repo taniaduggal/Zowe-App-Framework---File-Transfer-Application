@@ -23,7 +23,7 @@
 ##### PR Link :- https://github.com/zowe/file-transfer-app/pull/49
 
 #### 4. Main changes for the File-Transfer App
-  * Enhanced startup time and build time for the app.
+  * Enhanced startup time and build time for the Application.
   * Remove conflicting carbon styles and added webpack rule to load the min.css which makes things quite simple and no need to load scss from all components.
   * Add the support of stream-saver which helps to download larger files from the File-Transfer application which are persisted in the mainframe file-systems.
   * Easy to handle enviornment varaible configurations.
