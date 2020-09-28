@@ -47,6 +47,10 @@ In File-Transfer application we have addressed that in the UI with an easy user-
 ## File-Transfer-Application (Zowe-Desktop-Application)
 #### Project Link :- https://github.com/zowe/zlux-file-explorer
 
-#### 1. File Explorer PR on adding new theme functioanliy, style conflicting fixes Carbon component changes remove not used ui elements. 
+#### 1. File Explorer PR on 
+  * Adding new theme functioanlity 
+  * Fixing style conflicts 
+  * Carbon component reroutes
+  * Remove not used ui elements. 
 ##### PR Link :- https://github.com/zowe/zlux-file-explorer/pull/71/commits
 
