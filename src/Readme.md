@@ -63,8 +63,9 @@ In File-Transfer application we have addressed that in the UI with an easy user-
 #### 2. ZSS changes for tag the files recursively in Mainframe.
 ##### PR Link :- https://github.com/zowe/zss/pull/206
 
-#### 3. Add the funcationality to download folder content
+#### 3. Funcationality to download folder content from zss.
  * This will create .tar.gz file which will require less compute power from Mainframe.
- * serve the tar.gz file as a file for the download purpose.
- * delete the.tar.gz file after serving to th requested client
+ * Serve the tar.gz file as a file for the download purpose.
+ * Delete the.tar.gz file after serving to the requested client.
+ * Since this is a very specific use case for File-transfer-App team decided not to invlolve Zowe-Common-C project where we maintain the common generic functionality to be used all over the platforms.
 ##### PR Link :- https://github.com/zowe/zss/pull/204
