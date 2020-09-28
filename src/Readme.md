@@ -2,7 +2,7 @@
 
 ### The main goal of the project is to develop File-Transfer-App plugin on top of Zlux and develop the file-api's & data-set-api's in ZSS which are used as the backend to stream files/datasets and metadata.
 
-## File-Transfer-Application (Zowe-Desktop-Plugin)
+## File-Transfer-Application (Zowe-Desktop-Application)
 #### Project Link :- https://github.com/zowe/file-transfer-app
 
 #### 1. Integrate File explorer (Zowe-File-tree) to File transfer application (Explore and perform various actions on the files persisted in Mainframe).
@@ -87,5 +87,9 @@ In File-Transfer application we have addressed that in the UI with an easy user-
 #### 4. Download Data-Sets.
 ##### PR Link :- https://github.com/zowe/zowe-common-c/pull/168
 
+## Zlux-App-Server
+#### Project Link :- https://github.com/zowe/zlux-app-server
 
+#### 1. Add swagger documentaation for chmod functionality in ZSS.
+##### PR Link :- https://github.com/zowe/zlux-app-server/pull/132
 
