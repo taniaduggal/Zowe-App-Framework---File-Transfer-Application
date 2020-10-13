@@ -25,6 +25,6 @@ The Zowe Virtual Desktop needs to provide a way to easily transfer files and dat
 - [X] Mid-term Evaluation (by mentor)
 - [X] Code Project (with comments)
 - [X] Testing
-- [ ] Video Presentation of the Project
+- [X] Video Presentation of the Project
 - [ ] Final Evaluation (by mentor)
 - [ ] 3rd Stipend Released
